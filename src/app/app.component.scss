@@ -1,0 +1,31 @@
+// color variable map
+$colors: (
+  // non-nested values
+  text: #FFF,
+  background: #333,
+  pink: lighten(hotpink, 10%),
+  // nested map
+  primary: (
+    base: #330f53,
+    light: lighten(#330f53, 10%),
+    dark: darken(#330f53, 10%),
+    trans: transparentize(#330f53, 0.5)
+  ),
+  secondary: (
+    base: #0969A2,
+    light: lighten(#0969A2, 10%),
+    dark: darken(#0969A2, 10%),
+    trans: transparentize(#0969A2, 0.5)
+  )
+);
+
+// retrieve color from $colors map ie. `color(base, primary)`
+@function color($color-name, $color-variant:null) {
+    // color variant is optional
+    @if ($color-variant != null) {
+      // map inception
+      @return map-get(map-get($colors, $color-name), $color-variant);
+    } @else {
+      @return map-get($colors, $color-name);
+    }
+  }

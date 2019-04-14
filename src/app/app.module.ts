@@ -8,9 +8,15 @@ import { AppComponent } from './app.component';
 // Routing
 import { AppRoutingModule } from './app-routing.module';
 
+// UI
+import { HeaderComponent } from './ui/header/header.component';
+import { FooterComponent } from './ui/footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     AppRoutingModule,
