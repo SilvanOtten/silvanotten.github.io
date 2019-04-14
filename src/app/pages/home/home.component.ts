@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
     @HostListener('window:resize', ['$event'])
     onResize() {
-        this.screenHeight = window.innerHeight * 0.9;
+        this.screenHeight = window.innerHeight * 0.95;
         this.screenWidth = window.innerWidth;
         this.images = [1, 2, 3].map(() => `https://picsum.photos/` + this.screenWidth + `/` + this.screenHeight + `?random&t=${Math.random()}`);
     }
