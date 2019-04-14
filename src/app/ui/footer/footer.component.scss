@@ -1,6 +1,10 @@
 @import "../../app.component.scss";
 
-.fa-heart {
-    color: color(pink);
+.fa-angular, .fa-bootstrap {
+    color: color(pinky);
 }
 
+.navbar { 
+    background-color: color(darky);
+    padding: 0.25vh 5vw;
+}

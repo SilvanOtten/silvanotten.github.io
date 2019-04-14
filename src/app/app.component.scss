@@ -3,7 +3,8 @@ $colors: (
   // non-nested values
   text: #FFF,
   background: #333,
-  pink: lighten(hotpink, 10%),
+  pinky: lighten(hotpink, 10%),
+  darky: #111,
   // nested map
   primary: (
     base: #330f53,

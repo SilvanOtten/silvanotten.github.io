@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 // UI
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
+import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './ui/footer/footer.component';
   ],
   imports: [
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

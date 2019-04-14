@@ -1,0 +1,10 @@
+::ng-deep * {
+    :focus {
+        outline: none;
+    }
+}
+
+::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
+    cursor: pointer;
+}
+

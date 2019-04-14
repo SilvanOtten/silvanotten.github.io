@@ -1,15 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+// Angular
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+    public screenHeight: number;
+    public screenWidth: number;
+    public images: any;
 
-  ngOnInit() {
-  }
+    constructor() { }
+
+    @HostListener('window:resize', ['$event'])
+    onResize() {
+        this.screenHeight = window.innerHeight * 0.905;
+        this.screenWidth = window.innerWidth;
+        this.images = [1, 2, 3].map(() => `https://picsum.photos/` + this.screenWidth + `/` + this.screenHeight + `?random&t=${Math.random()}`);
+    }
+
+    ngOnInit() {
+        this.onResize();
+    }
 
 }
