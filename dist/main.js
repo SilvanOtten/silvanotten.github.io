@@ -178,7 +178,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\eek_d\Desktop\live\silvanotten.github.io\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! c:\Users\eek_d\Desktop\Live\silvanotten.github.io\src\main.ts */"./src/main.ts");
 
 
 /***/ })
