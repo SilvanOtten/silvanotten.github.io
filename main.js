@@ -224,7 +224,7 @@ var HomeComponent = /** @class */ (function () {
     }
     HomeComponent.prototype.onResize = function () {
         var _this = this;
-        this.screenHeight = window.innerHeight * 0.9;
+        this.screenHeight = window.innerHeight * 0.95;
         this.screenWidth = window.innerWidth;
         this.images = [1, 2, 3].map(function () { return "https://picsum.photos/" + _this.screenWidth + "/" + _this.screenHeight + ("?random&t=" + Math.random()); });
     };
