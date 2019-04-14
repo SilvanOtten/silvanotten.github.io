@@ -8,7 +8,12 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "git": "git push origin `git subtree split --prefix dist development`:master --force"
+    "split": "git subtree split --prefix dist development",
+    "deploy": "git push origin &&npm run split:master --force",
+    "lulz": "git status",
+    "lulz2": "npm run lulz",
+    "testeroni": ""
+
   },
   "private": true,
   "dependencies": {
