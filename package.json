@@ -1,6 +1,10 @@
 {
   "name": "silvan",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "hash": "8677fc048fdff56b7a7bace12062ff817f224e4e"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,12 +12,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "split": "git subtree split --prefix dist development",
-    "deploy": "git push origin &&npm run split:master --force",
-    "lulz": "git status",
-    "lulz2": "npm run lulz",
-    "testeroni": ""
-
+    "hash": "git subtree split --prefix dist development",
+    "deploy": "git push origin %npm_package_repository_hash%:master --force"
   },
   "private": true,
   "dependencies": {
