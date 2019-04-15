@@ -224,8 +224,8 @@ var HomeComponent = /** @class */ (function () {
     }
     HomeComponent.prototype.onResize = function () {
         var _this = this;
-        this.screenHeight = window.innerHeight * 0.91;
-        this.screenWidth = window.innerWidth;
+        this.screenHeight = window.innerHeight * 0.915;
+        this.screenWidth = window.innerWidth * 1.01;
         this.images = [1, 2, 3].map(function () { return "https://picsum.photos/" + _this.screenWidth + "/" + _this.screenHeight + ("?random&t=" + Math.random()); });
     };
     HomeComponent.prototype.ngOnInit = function () {
