@@ -8,7 +8,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "hash": "git subtree split --prefix dist development",
     "deploy": "git push origin `git subtree split --prefix dist development`:master --force"
   },
   "private": true,

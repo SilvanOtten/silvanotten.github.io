@@ -1,32 +1,55 @@
-// color variable map
+// Page elements
+.header {
+  height: 32px;
+}
+
+.content {
+  height: calc(100vh - 48px);
+  padding: 32px 0 16px 0;
+}
+
+.footer {
+  height: 16px;
+}
+
+@media (max-width: 530px) {
+    .content {
+      height: calc(100vh - 64px);
+      padding-top: 64px;
+      margin: 0;
+    }
+}
+
+// App style elements
 $colors: (
-  // non-nested values
   text: #FFF,
   background: #333,
   pinky: lighten(hotpink, 10%),
   darky: #111,
+  orangy: rgb(255, 166, 0),
   // nested map
-  primary: (
-    base: #330f53,
-    light: lighten(#330f53, 10%),
-    dark: darken(#330f53, 10%),
-    trans: transparentize(#330f53, 0.5)
-  ),
-  secondary: (
-    base: #0969A2,
-    light: lighten(#0969A2, 10%),
-    dark: darken(#0969A2, 10%),
-    trans: transparentize(#0969A2, 0.5)
+  transparenty: (
+    darky: rgba(17, 17, 17, 0.5),
   )
 );
 
 // retrieve color from $colors map ie. `color(base, primary)`
 @function color($color-name, $color-variant:null) {
-    // color variant is optional
-    @if ($color-variant != null) {
-      // map inception
-      @return map-get(map-get($colors, $color-name), $color-variant);
-    } @else {
-      @return map-get($colors, $color-name);
-    }
+  // color variant is optional
+  @if ($color-variant != null) {
+    // map inception
+    @return map-get(map-get($colors, $color-name), $color-variant);
+  } @else {
+    @return map-get($colors, $color-name);
   }
+}
+
+::ng-deep * {
+  :focus {
+      outline: none;
+  }
+}
+
+::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
+  cursor: pointer;
+}

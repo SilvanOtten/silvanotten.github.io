@@ -7,22 +7,39 @@ import { Component, OnInit, HostListener } from '@angular/core';
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-    public screenHeight: number;
-    public screenWidth: number;
-    public images: any;
+    private imagePath = '../../../assets/images/';
+    public slides: object[];
 
     constructor() { }
 
-    @HostListener('window:resize', ['$event'])
-    onResize() {
-        this.screenHeight = window.innerHeight * 0.915;
-        this.screenWidth = window.innerWidth * 1.01;
-        this.images = [1, 2, 3].map(() => `https://picsum.photos/` + this.screenWidth + `/` + this.screenHeight + `?random&t=${Math.random()}`);
-    }
-
     ngOnInit() {
-        this.onResize();
+        this.slides = [
+            {
+                image: this.imagePath + 'wall.jpg',
+                label: 'Nature',
+                description: 'Discover and explore the possibilities in nature'
+            },
+            {
+                image: this.imagePath + 'pineapple.jpg',
+                label: 'Relaxed',
+                description: 'Take to relax and be creative'
+            },
+            {
+                image: this.imagePath + 'lamps.jpg',
+                label: 'Nightowl',
+                description: 'Available all day'
+            },
+            {
+                image: this.imagePath + 'skyline.jpg',
+                label: 'International',
+                description: 'Let\'s go places'
+            },
+            {
+                image: this.imagePath + 'cooking.jpg',
+                label: 'Cooking',
+                description: 'Good food good life'
+            },
+        ];
     }
 
 }

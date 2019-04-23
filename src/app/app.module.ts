@@ -11,12 +11,14 @@ import { AppRoutingModule } from './app-routing.module';
 // UI
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
+
+// Bootstrap
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent,
     HeaderComponent,
+    AppComponent,
     FooterComponent,
   ],
   imports: [

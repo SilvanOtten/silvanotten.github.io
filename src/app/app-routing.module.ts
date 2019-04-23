@@ -9,8 +9,17 @@ import { HomeModule } from './pages/home/home.module';
 const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        component: HomeComponent,
+    },
+    {
+        path: 'about',
+        loadChildren: './pages/about/about.module#AboutModule'
+    },
+    {
+        path: '**',
+        redirectTo: '',
     }
+
 ];
 
 @NgModule({

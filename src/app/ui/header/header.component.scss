@@ -2,5 +2,19 @@
 
 .navbar { 
     background-color: color(darky);
-    padding: 0.3vh 5vw;
+    padding: 0 4vw;
+    align-content: center;
+}
+
+.title {
+    color: color(text) !important;
+    margin: 0 2vw 0 0;
+    font-size: 2em;
+}
+
+.dot {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: color(orangy);
 }

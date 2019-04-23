@@ -1,11 +1,10 @@
-<nav class="navbar navbar-dark">
+<nav class="navbar navbar-dark fixed-top">
   <div class="navbar-expand mr-auto">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" (click)="activeLink='home'" [class.active]="activeLink==='home'" href=" #">Home</a>
-      <a class="nav-item nav-link" (click)="activeLink='about'" [class.active]="activeLink==='about'"
-        href=" #">About</a>
-      <a class="nav-item nav-link" (click)="activeLink='contact'" [class.active]="activeLink==='contact'"
-        href=" #">Contact</a>
+      <a class="nav-item nav-link title" (click)="activeLink='home'" routerLink="">Silvan<div class="dot">.</div></a>
+      <a class="nav-item nav-link" (click)="activeLink='home'" [class.active]="activeLink==='home'" routerLink="">Home</a>
+      <a class="nav-item nav-link" (click)="activeLink='about'" [class.active]="activeLink==='about'" routerLink="/about">About</a>
+      <a class="nav-item nav-link" (click)="activeLink='contact'" [class.active]="activeLink==='contact'" routerLink="">Contact</a>
     </div>
   </div>
   <div class="navbar-expand ml-auto navbar-nav">
