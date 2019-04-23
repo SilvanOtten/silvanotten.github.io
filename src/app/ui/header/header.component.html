@@ -1,12 +1,14 @@
 <nav class="navbar navbar-dark fixed-top">
+
   <div class="navbar-expand mr-auto">
     <div class="navbar-nav">
-      <a class="nav-item nav-link title" (click)="activeLink='home'" routerLink="">Silvan<div class="dot">.</div></a>
-      <a class="nav-item nav-link" (click)="activeLink='home'" [class.active]="activeLink==='home'" routerLink="">Home</a>
-      <a class="nav-item nav-link" (click)="activeLink='about'" [class.active]="activeLink==='about'" routerLink="/about">About</a>
-      <a class="nav-item nav-link" (click)="activeLink='contact'" [class.active]="activeLink==='contact'" routerLink="">Contact</a>
+      <a class="nav-item nav-link title" routerLink="">Silvan<div class="dot">.</div></a>
+      <a class="nav-item nav-link" [class.active]="isActive('home')" routerLink="">Home</a>
+      <a class="nav-item nav-link" [class.active]="isActive('about')" routerLink="/about">About</a>
+      <a class="nav-item nav-link" [class.active]="isActive('contact')" routerLink="/contact">Contact</a>
     </div>
   </div>
+
   <div class="navbar-expand ml-auto navbar-nav">
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="https://github.com/silvanotten">
@@ -29,4 +31,5 @@
       </a>
     </div>
   </div>
+
 </nav>

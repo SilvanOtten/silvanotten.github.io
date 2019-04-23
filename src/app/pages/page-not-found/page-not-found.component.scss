@@ -1,0 +1,76 @@
+@import "../../app.component.scss";
+
+%no-select-shared {
+    user-select: none; /* Standard */
+    -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+}
+  
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 520px;
+    width: 100%;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.notFound {
+    position: relative;
+    height: 220px;
+    margin: 0px auto 20px;
+}
+
+h1 {
+    @extend %no-select-shared;
+    font-size: 240px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+h2 {
+    @extend %no-select-shared;
+    font-weight: 200;
+    text-transform: uppercase;
+    background-color: color(texty);
+    padding: 12px 6px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+}
+  
+a {
+    @extend %no-select-shared;
+    font-weight: 600;
+    text-decoration: none;
+    color: color(texty);
+    text-transform: uppercase;
+    padding: 12px 24px;
+    background: color(orangy);
+    font-size: 18px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    &:hover {
+        color: color(orangy);
+        background: color(darky);
+    }
+}
+
+img {
+    margin: 10vw;
+}
+
+  
+  

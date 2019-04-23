@@ -9,6 +9,11 @@ import { HomeModule } from './pages/home/home.module';
 const routes: Routes = [
     {
         path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: 'home',
         component: HomeComponent,
     },
     {
@@ -16,8 +21,12 @@ const routes: Routes = [
         loadChildren: './pages/about/about.module#AboutModule'
     },
     {
+        path: 'contact',
+        loadChildren: './pages/contact/contact.module#ContactModule'
+    },
+    {
         path: '**',
-        redirectTo: '',
+        loadChildren: './pages/page-not-found/page-not-found.module#PageNotFoundModule'
     }
 
 ];
