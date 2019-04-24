@@ -13,7 +13,7 @@ import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 
 // Bootstrap
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbTooltipModule, NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbTooltipModule
+    NgbTooltipModule,
+    NgbCollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

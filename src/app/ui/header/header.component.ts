@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   public discord = 'Niamus#0931';
   public email = 'silvan.otten@windesheim.nl';
+  public isExpanded = false;
 
   constructor(private router: Router) { }
 
@@ -18,6 +19,10 @@ export class HeaderComponent implements OnInit {
 
   isActive(url: string): boolean {
     return this.router.url.includes(url);
+  }
+
+  toggleExpand() {
+    this.isExpanded = !this.isExpanded;
   }
 
 }

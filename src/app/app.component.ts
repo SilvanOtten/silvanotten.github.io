@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-// declare ga as a function to set and sent the events
+// Declare ga as a function to set and sent the events
 // tslint:disable-next-line: ban-types
 declare let ga: Function;
 

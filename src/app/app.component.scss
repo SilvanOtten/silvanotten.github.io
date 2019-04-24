@@ -1,23 +1,12 @@
 // Page elements
-.header {
-  height: 32px;
-}
-
 .content {
-  height: calc(100vh - 48px);
-  padding: 32px 0 16px 0;
+  padding-top: 64px;
 }
 
-.footer {
-  height: 16px;
-}
-
-@media (max-width: 530px) {
-    .content {
-      height: calc(100vh - 64px);
-      padding-top: 64px;
-      margin: 0;
-    }
+@media (max-height: 400px) {
+  .footer {
+    display: none;
+  }
 }
 
 // App style elements
@@ -27,17 +16,17 @@ $colors: (
   pinky: lighten(hotpink, 10%),
   darky: #111,
   orangy: rgb(255, 166, 0),
-  // nested map
+  // Nested map
   transparenty: (
     darky: rgba(17, 17, 17, 0.5),
   )
 );
 
-// retrieve color from $colors map ie. `color(base, primary)`
+// Retrieve color from $colors map ie. `color(base, primary)`
 @function color($color-name, $color-variant:null) {
-  // color variant is optional
+  // Color variant is optional
   @if ($color-variant != null) {
-    // map inception
+    // Map inception
     @return map-get(map-get($colors, $color-name), $color-variant);
   } @else {
     @return map-get($colors, $color-name);
