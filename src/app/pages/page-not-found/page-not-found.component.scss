@@ -6,9 +6,14 @@
         -moz-user-select: none; /* Firefox */
             -ms-user-select: none; /* IE10+/Edge */
 }
+
+@media (max-width: 685px) {
+    .container {
+        overflow: hidden;
+    }
+}
   
 .container {
-    overflow: hidden;
     position: absolute;
     left: 50%;
     top: 50%;
