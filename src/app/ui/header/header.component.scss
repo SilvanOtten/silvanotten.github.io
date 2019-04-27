@@ -7,7 +7,11 @@
 
 .title {
     color: color(text) !important;
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+.fab, .fas {
+    font-size: 1.25em;
 }
 
 .dot {
@@ -22,18 +26,17 @@
     }
 
     .hamburger {
-        display: block !important;
-    }
-
-    .navbar-collapse {
         display: inline-block !important;
+        top: -1.15em;
+        right: 2em;
+        text-align: right;
+        z-index: -1;
     }
 }
 
 .hamburger, .navbar-collapse {
     display: none;
 }
-
 
 // Hamburger variables
 $height-icon: 1em;
@@ -44,11 +47,11 @@ $rotation: 405deg;
 $translateY: ($height-icon / 2);
 $translateX: 0;
 
-#hamburger-icon {
+#hamburger-icon {    
     width: $width-line;
     height: $height-icon;
     position: relative;
-    display: block;
+    display: inline-block;
     margin: ($height-icon * 2) auto $height-icon auto;
     cursor: pointer;  
     .line {
@@ -57,7 +60,6 @@ $translateX: 0;
         width: $width-line;
         height: $height-line;
         position: absolute;
-        left: 0;
         border-radius: $height-line / 2;
         transition: all $transition-time;
         -webkit-transition: all $transition-time;

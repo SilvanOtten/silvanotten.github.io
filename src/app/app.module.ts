@@ -25,7 +25,7 @@ import { NgbTooltipModule, NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap'
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbTooltipModule,
-    NgbCollapseModule
+    NgbCollapseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

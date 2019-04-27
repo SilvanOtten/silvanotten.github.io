@@ -2,60 +2,47 @@
     <div class="navbar-expand mr-auto navbar-nav">
         <div class="navbar-nav">
             <a class="nav-item nav-link title" routerLink="">Silvan<div class="dot">.</div></a>
-
-            <a class="nav-item nav-link" [class.active]="isActive('home')" routerLink="">Home</a>
-            <a class="nav-item nav-link" [class.active]="isActive('about')" routerLink="/about">About</a>
-            <a class="nav-item nav-link" [class.active]="isActive('contact')" routerLink="/contact">Contact</a>
+            <div class="navbar-nav" [hidden]="isExpanded">
+                <a class="nav-item nav-link" [class.active]="isActive('home')" routerLink="">Home</a>
+                <a class="nav-item nav-link" [class.active]="isActive('about')" routerLink="/about">About</a>
+                <a class="nav-item nav-link" [class.active]="isActive('contact')" routerLink="/contact">Contact</a>
+            </div>
+        </div>
+        <div [hidden]="!isExpanded" class="navbar-nav">
+            <ng-template [ngTemplateOutlet]="MediaRef"></ng-template>
         </div>
     </div>
 
-    <div class="hamburger">
+    <div class="hamburger fixed-top">
         <a id="hamburger-icon" [class.active]="isExpanded" title="Menu" (click)="toggleExpand()">
             <span class="line line-1"></span>
             <span class="line line-2"></span>
             <span class="line line-3"></span>
         </a>
-
-        <div [ngbCollapse]="!isExpanded">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="https://github.com/silvanotten">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a class="nav-item nav-link" href="mailto:silvan.otten@windesheim.nl" placement="bottom"
-                    ngbTooltip="{{ email }}">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a class="nav-item nav-link" href="https://linkedin.com/in/silvanotten">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a class="nav-item nav-link discord" placement="bottom" ngbTooltip="{{ discord }}" target="_blank">
-                    <i class="fab fa-discord"></i>
-                </a>
-                <a class="nav-item nav-link" href="https://www.facebook.com/silvan.otten">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </div>
-        </div>
     </div>
 
     <div class="navbar-expand ml-auto navbar-nav media">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="https://github.com/silvanotten">
-                <i class="fab fa-github"></i>
-            </a>
-            <a class="nav-item nav-link" href="mailto:silvan.otten@windesheim.nl" placement="bottom"
-                ngbTooltip="{{ email }}">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a class="nav-item nav-link" href="https://linkedin.com/in/silvanotten">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a class="nav-item nav-link discord" placement="bottom" ngbTooltip="{{ discord }}" target="_blank">
-                <i class="fab fa-discord"></i>
-            </a>
-            <a class="nav-item nav-link" href="https://www.facebook.com/silvan.otten">
-                <i class="fab fa-facebook"></i>
-            </a>
-        </div>
+        <ng-template [ngTemplateOutlet]="MediaRef"></ng-template>
     </div>
 </nav>
+
+<ng-template #MediaRef>
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" href="https://github.com/silvanotten">
+            <i class="fab fa-github"></i>
+        </a>
+        <a class="nav-item nav-link" href="mailto:silvan.otten@windesheim.nl" placement="bottom"
+            ngbTooltip="{{ email }}">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a class="nav-item nav-link" href="https://linkedin.com/in/silvanotten">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="nav-item nav-link discord" placement="bottom" ngbTooltip="{{ discord }}" target="_blank">
+            <i class="fab fa-discord"></i>
+        </a>
+        <a class="nav-item nav-link" href="https://www.facebook.com/silvan.otten">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+</ng-template>

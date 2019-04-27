@@ -1,13 +1,192 @@
-<ngb-carousel class="carousel">
-  <ng-container *ngFor="let slide of slides">
-    <ng-template ngbSlide>
-      <img [src]="slide.image">
-      <div class="carousel-caption">
-        <h3>{{ slide.label }}</h3>
-        <div class="description">
-          <div class="description-text">&nbsp; {{ slide.description }} &nbsp;</div>
-        </div>
+<header>
+  <img src="../../../assets/images/headshot.jpg">
+  <h1>Silvan Otten</h1>
+  <p>Software Developer</p>
+</header>
+
+<div class="container">
+  <section class="center">
+    <h1>Welcome!</h1>
+    <p>
+      I'm a third year student at the University of Windesheim, Zwolle.
+      Currently developing my knowledge and experience within agile environments.
+      I consider my greatest strengths to be my eagerness to learn new skills, pro-activity, and my ability
+      to handle an everchanging environment with a positive mindset.
+    </p>
+  </section>
+
+  <hr>
+  <!-- 
+  <section class="gallery">
+    <h1 class="center">Gallery</h1>
+    <div class="row">
+      <a href="#"><img src="img/re.png" class="grid-2"></a>
+      <a href="#"><img src="img/re.png" class="grid-2"></a>
+      <a href="#"><img src="img/re.png" class="grid-2"></a>
+      <a href="#"><img src="img/re.png" class="grid-2"></a>
+      <a href="#"><img src="img/re.png" class="grid-2"></a>
+      <a href="#"><img src="img/re.png" class="grid-2"></a>
+    </div>
+  </section>
+
+  <hr> -->
+  <!-- 
+  <section class="testimonial">
+    <div class="row">
+      <div class="grid-2">
+        <img src="img/re.png">
+        <h2>Their Name</h2>
+        <p>You can use this as a place to put recommendations, accolades and testimonials</p>
       </div>
-    </ng-template>
-  </ng-container>
-</ngb-carousel>
+
+      <div class="grid-2">
+        <img src="img/re.png">
+        <h2>Their Name</h2>
+        <p>You can use this as a place to put recommendations, accolades and testimonials</p>
+      </div>
+
+      <div class="grid-2">
+        <img src="img/re.png">
+        <h2>Their Name</h2>
+        <p>You can use this as a place to put recommendations, accolades and testimonials</p>
+      </div>
+    </div>
+  </section> -->
+</div>
+
+<div class="container">
+
+  <section class="objective">
+    <h3>B.Sc. Information & Communication Technology from Windesheim, University of Applied Sciences.</h3>
+    <h6 class="italic">Estimated July 2020</h6>
+  </section>
+
+  <hr>
+
+  <section class="education">
+
+    <div class="row">
+      <div class="grid-2">
+        <h2>Hogeschool Utrecht</h2>
+        <p>Sept. 2019 - Feb. 2020</p>
+      </div>
+      <div class="grid-4">
+        <ul>
+          <span class="italic">Continuous Delivery in Large and Complex Software Systems</span>
+          <li>Building big applications from front to back with C# / .NET Core</li>
+          <li>Complex systems with Specflow, Docker, MoQ, RabbitMQ</li>
+          <li>Focus on Process Automation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="grid-2">
+        <h2>Windesheim</h2>
+        <p>Sept. 2016 - Present</p>
+      </div>
+      <div class="grid-4">
+        <ul>
+          <span class="italic">Information & Communication Technology</span>
+          <li>Software Engineering</li>
+          <li>Design Patterns & Algorithms and Datastructures</li>
+          <li>Web and App Development with Analytics</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="grid-2">
+        <h2>Windesheim</h2>
+        <p>Sept. 2010 - June 2011</p>
+      </div>
+      <div class="grid-4">
+        <ul>
+          <span class="italic">Business Economics</span>
+          <li>Accounting & Financial Management</li>
+          <li>Management & Financial Accounting</li>
+          <li>Internal and External Business Factors</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="grid-2">
+        <h2>University of Twente</h2>
+        <p>Sept. 2009 - June 2010</p>
+      </div>
+      <div class="grid-4">
+        <ul>
+          <span class="italic">Industrial Design Engineering</span>
+          <li>Creatively designing Consumer Products</li>
+          <li>Applied Physics and Material Sciences</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="grid-2">
+        <h2>CSG. De Heemgaard</h2>
+        <p>Sept. 2003 - June 2009</p>
+      </div>
+      <div class="grid-4">
+        <ul>
+          <span class="italic">Nature and Health Sciences - Pre-university Degree</span>
+          <li>Math, Biology, Physics, Chemistry, and Economics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+</div>
+
+<section class="spotlight">
+  <div class="container">
+    <div class="row">
+      <div class="grid-3">
+        <img src="../../../assets/images/logo-kro.png">
+      </div>
+      <div class="grid-3">
+        <h1>Project Spotlight</h1>
+        <p>Give a brief description of what this project is and what role you played. It can also be helpful to
+          include
+          a link</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 
+<div class="container">
+  <section>
+    <div class="row">
+      <div class="grid-2">
+        <h1>Skills</h1>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Angular.js</li>
+          <li>Photoshop</li>
+          <li>Git</li>
+        </ul>
+      </div>
+
+      <div class="grid-4">
+        <h1>In Conclusion</h1>
+        <p>
+          This is a good spot to highlight experiance and skills. Make sure to include a call to action like a link to
+          your website, or your email address.
+          If you find bugs, want features, or have questions, feel free to submit an <a
+            href="https://github.com/philipcdavis/responsive-resume/issues">issue</a>. You are free to use without
+          attribution.
+          If you're ok sharing, I would love seeing what you make! Shoot me an
+          <a href="mailto:silvan.otten@windesheim.nlSubject=Responsive%20Resume" target="_top">email</a> or
+          <a href="http://www.twitter.com/philipcdavis">tweet</a> at me.
+        </p>
+      </div>
+    </div>
+  </section>
+</div> -->

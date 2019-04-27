@@ -1,29 +1,37 @@
 // Page elements
 .content {
-  padding-top: 64px;
+  padding-top: 52px;
 }
 
-@media (max-height: 400px) {
+@media (max-height: 576px) {
   .footer {
     display: none;
   }
 }
 
 // App style elements
+$kvr-grey: #4c5255;
+
 $colors: (
-  texty: #FFF,
+  kvr-green: #226c65,
+  kvr-grey: $kvr-grey,
+  texty: #fff,
   background: #333,
   pinky: lighten(hotpink, 10%),
   darky: #111,
-  orangy: rgb(255, 166, 0),
-  // Nested map
+  orangy: #ffa600,
+  greyy: #bbb,
+  lighty: (
+    pinky: lighten(hotpink, 10%),
+    kvr-grey: lighten($kvr-grey, 50%)
+  ),
   transparenty: (
-    darky: rgba(17, 17, 17, 0.5),
+    darky: rgba(15, 15, 15, 0.5)
   )
 );
 
 // Retrieve color from $colors map ie. `color(base, primary)`
-@function color($color-name, $color-variant:null) {
+@function color($color-name, $color-variant: null) {
   // Color variant is optional
   @if ($color-variant != null) {
     // Map inception
@@ -34,11 +42,12 @@ $colors: (
 }
 
 ::ng-deep * {
-  :focus {
-      outline: none;
+  &:focus {
+    outline: none;
   }
 }
 
-::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
+::ng-deep .carousel-control-prev,
+::ng-deep .carousel-control-next {
   cursor: pointer;
 }
