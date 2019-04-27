@@ -10,10 +10,11 @@
 }
 
 // App style elements
+$kvr-green: #226c65;
 $kvr-grey: #4c5255;
 
 $colors: (
-  kvr-green: #226c65,
+  kvr-green: $kvr-green,
   kvr-grey: $kvr-grey,
   texty: #fff,
   background: #333,
@@ -23,9 +24,11 @@ $colors: (
   greyy: #bbb,
   lighty: (
     pinky: lighten(hotpink, 10%),
+    kvr-green: lighten($kvr-green, 5%),
     kvr-grey: lighten($kvr-grey, 50%)
   ),
   transparenty: (
+    blacky: rgba(255, 255, 255, 0.5),
     darky: rgba(15, 15, 15, 0.5)
   )
 );
