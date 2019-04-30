@@ -5,6 +5,9 @@ import { NgModule } from '@angular/core';
 // Components
 import { AppComponent } from './app.component';
 
+// Modal Components
+import { ProjectModalComponent } from './modals/project-modal/project-modal.component';
+
 // Routing
 import { AppRoutingModule } from './app-routing.module';
 
@@ -13,20 +16,21 @@ import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 
 // Bootstrap
-import { NgbTooltipModule, NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     AppComponent,
     FooterComponent,
+    ProjectModalComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbTooltipModule,
-    NgbCollapseModule,
+    NgbModule
   ],
+  entryComponents: [ProjectModalComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

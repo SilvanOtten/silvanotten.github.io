@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h4 class="modal-title"> {{ project.title }} </h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span> <!-- x -->
+  </button>
+</div>
+
+<div class="modal-body">
+  <div class="card lesson-border">
+    <img class="card-img-top center" [src]="project.url" alt="Project Image">
+    <div class="card-body">
+      {{ project.description }}
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close()">Close</button>
+</div>

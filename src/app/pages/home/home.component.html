@@ -119,88 +119,61 @@
   </div>
 </section>
 
-<div class="container projects">
-  <h1 class="center">Projects</h1>
+<div class="container">
+  <h1 class="center projects">Projects</h1>
   <div class="card-columns">
-    <div class="card mx-auto">
-      <div class="card-body center">
-        <h4 class="card-title">Kavelruilonline</h4>
-        <img class="card-img-bottom" src="../../../assets/images/projects/logo-kro.png" alt="Card image">
-        <a href="#" class="btn btn-primary stretched-link">View More</a>
-      </div>
-    </div>
 
-    <div class="card mx-auto">
-      <div class="card-body center">
-        <h4 class="card-title">Driving Analyses</h4>
-        <img class="card-img-bottom" src="../../../assets/images/projects/ns.png" alt="Card image">
-        <a href="#" class="btn btn-primary stretched-link">View More</a>
+    <ng-container *ngFor="let project of projects">
+      <div class="card mx-auto">
+        <div class="card-body center">
+          <h4 class="card-title"> {{ project.title }}</h4>
+          <img class="card-img-bottom" [src]="project.url" alt="Card image">
+          <button class="btn btn-primary" (click)="open(project)">View More</button>
+        </div>
       </div>
-    </div>
-
-    <div class="card mx-auto">
-      <div class="card-body center">
-        <h4 class="card-title">SuperBuddy</h4>
-        <img class="card-img-bottom" src="../../../assets/images/projects/superbuddy.png" alt="Card image">
-        <a href="#" class="btn btn-primary stretched-link">View More</a>
-      </div>
-    </div>
-
-    <div class="card mx-auto">
-      <div class="card-body center">
-        <h4 class="card-title">Peer Assessment</h4>
-        <img class="card-img-bottom" src="../../../assets/images/projects/pat.jpg" alt="Card image">
-        <a href="#" class="btn btn-primary stretched-link">View More</a>
-      </div>
-    </div>
-
-    <div class="card mx-auto">
-      <div class="card-body center">
-        <h4 class="card-title">TSP</h4>
-        <img class="card-img-bottom" src="../../../assets/images/projects/tsp.jpg" alt="Card image">
-        <a href="#" class="btn btn-primary stretched-link">View More</a>
-      </div>
-    </div>
-
-    <div class="card mx-auto">
-      <div class="card-body center">
-        <h4 class="card-title">Platform Game</h4>
-        <img class="card-img-bottom" src="../../../assets/images/projects/game.jpg" alt="Card image">
-        <a href="#" class="btn btn-primary stretched-link">View More</a>
-      </div>
-    </div>
+    </ng-container>
   </div>
 
   <hr>
 
-  <!-- <div class="container">
   <section>
     <div class="row">
       <div class="grid-2">
-        <h1>Skills</h1>
+        <h1>Languages</h1>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>Angular.js</li>
-          <li>Photoshop</li>
-          <li>Git</li>
+          <li>Angular</li>
+          <li>TypeScript / JavaScript</li>
+          <li>C# / .NET</li>
+          <li>Linq / SQL / ExpressJS</li>
+          <li>HTML / CSS</li>
         </ul>
       </div>
 
-      <div class="grid-4">
-        <h1>In Conclusion</h1>
-        <p>
-          This is a good spot to highlight experiance and skills. Make sure to include a call to action like a link to
-          your website, or your email address.
-          If you find bugs, want features, or have questions, feel free to submit an <a
-            href="https://github.com/philipcdavis/responsive-resume/issues">issue</a>. You are free to use without
-          attribution.
-          If you're ok sharing, I would love seeing what you make! Shoot me an
-          <a href="mailto:silvan.otten@windesheim.nlSubject=Responsive%20Resume" target="_top">email</a> or
-          <a href="http://www.twitter.com/philipcdavis">tweet</a> at me.
-        </p>
+      <div class="grid-2">
+        <h1>Methods</h1>
+        <ul>
+          <li>Scrum / Agile</li>
+          <li>MVC</li>
+          <li>Git</li>
+          <li>Test Driven Development</li>
+          <li>Story Mapping</li>
+        </ul>
       </div>
+
+      <div class="grid-2">
+        <h1>Goals</h1>
+        <ul>
+          <li>Fullstack</li>
+          <li>UI / UX</li>
+          <li>Optimization</li>
+          <li>Data Analyses</li>
+          <li>Self-Improvement</li>
+        </ul>
+      </div>
+
     </div>
   </section>
-</div> -->
+
+  <hr>
+
+</div>
