@@ -14,12 +14,12 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.slides = [
       {
-        image: this.imagePath + 'wall.jpg',
+        image: this.imagePath + 'pineapple.jpg',
         label: 'Communication',
         description: 'Excellent writing, good people skills, and the capacity to think critically and strategically.'
       },
       {
-        image: this.imagePath + 'pineapple.jpg',
+        image: this.imagePath + 'fruit.jpg',
         label: 'Passion and Commitment',
         description: 'Involved to solve real problems, aiming for success.'
       },
