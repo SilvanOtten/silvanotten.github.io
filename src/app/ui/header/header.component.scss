@@ -1,41 +1,43 @@
 @import "../../app.component.scss";
 
-.navbar { 
-    background-color: color(darky);
-    padding: 0 4vw;
+.navbar {
+  background-color: color(darky);
+  padding: 0 4vw;
 }
 
 .title {
-    color: color(text) !important;
-    font-size: 1.5em;
+  color: color(text) !important;
+  font-size: 1.5em;
 }
 
-.fab, .fas {
-    font-size: 1.25em;
+.fab,
+.fas {
+  font-size: 1.25em;
 }
 
 .dot {
-    display: inline-block;
-    margin: 0;
-    color: color(orangy);
+  display: inline-block;
+  margin: 0;
+  color: color(orangy);
 }
 
 @media (max-width: 530px) {
-    .media {
-        display: none;
-    }
+  .media {
+    display: none;
+  }
 
-    .hamburger {
-        display: inline-block !important;
-        top: -1.15em;
-        right: 2em;
-        text-align: right;
-        z-index: -1;
-    }
+  .hamburger {
+    display: inline-block !important;
+    top: -1.15em;
+    right: 2em;
+    text-align: right;
+    z-index: -1;
+  }
 }
 
-.hamburger, .navbar-collapse {
-    display: none;
+.hamburger,
+.navbar-collapse {
+  display: none;
 }
 
 // Hamburger variables
@@ -47,58 +49,59 @@ $rotation: 405deg;
 $translateY: ($height-icon / 2);
 $translateX: 0;
 
-#hamburger-icon {    
+#hamburger-icon {
+  width: $width-line;
+  height: $height-icon;
+  position: relative;
+  display: inline-block;
+  margin: ($height-icon * 2) auto $height-icon auto;
+  cursor: pointer;
+  .line {
+    display: block;
+    background: color(texty);
     width: $width-line;
-    height: $height-icon;
-    position: relative;
-    display: inline-block;
-    margin: ($height-icon * 2) auto $height-icon auto;
-    cursor: pointer;  
-    .line {
-        display: block;
-        background: color(texty);
-        width: $width-line;
-        height: $height-line;
-        position: absolute;
-        border-radius: $height-line / 2;
-        transition: all $transition-time;
-        -webkit-transition: all $transition-time;
-        -moz-transition: all $transition-time;
-        &.line-1 {
-            top: 0;
-        }
-        &.line-2 {
-            top: 50%;
-        }
-        &.line-3 {
-            top: 100%;
-        }
+    height: $height-line;
+    position: absolute;
+    border-radius: $height-line / 2;
+    transition: all $transition-time;
+    -webkit-transition: all $transition-time;
+    -moz-transition: all $transition-time;
+    &.line-1 {
+      top: 0;
     }
-    &:hover, &:focus {
-        .line-1 {
-            transform: translateY($height-line / 2 * -1);
-            -webkit-transform: translateY($height-line / 2 * -1);
-            -moz-transform: translateY($height-line / 2 * -1);
-        }
-        .line-3 {
-            transform: translateY($height-line / 2);
-            -webkit-transform: translateY($height-line / 2);
-            -moz-transform: translateY($height-line / 2);
-        }
+    &.line-2 {
+      top: 50%;
     }
-    &.active {
-        .line-1 {
-            transform: translateY($translateY) translateX($translateX) rotate($rotation);
-            -webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation);
-            -moz-transform: translateY($translateY) translateX($translateX) rotate($rotation);
-        }
-        .line-2 {
-            opacity: 0;
-        }
-        .line-3 {
-            transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
-            -webkit-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
-            -moz-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
-        }
+    &.line-3 {
+      top: 100%;
     }
+  }
+  &:hover,
+  &:focus {
+    .line-1 {
+      transform: translateY($height-line / 2 * -1);
+      -webkit-transform: translateY($height-line / 2 * -1);
+      -moz-transform: translateY($height-line / 2 * -1);
+    }
+    .line-3 {
+      transform: translateY($height-line / 2);
+      -webkit-transform: translateY($height-line / 2);
+      -moz-transform: translateY($height-line / 2);
+    }
+  }
+  &.active {
+    .line-1 {
+      transform: translateY($translateY) translateX($translateX) rotate($rotation);
+      -webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+      -moz-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+    }
+    .line-2 {
+      opacity: 0;
+    }
+    .line-3 {
+      transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+      -webkit-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+      -moz-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+    }
+  }
 }

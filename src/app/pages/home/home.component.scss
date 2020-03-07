@@ -12,17 +12,6 @@
   font-family: "Oxygen";
 }
 
-.container {
-  max-width: 50em;
-  width: 90%;
-}
-
-@media screen and (max-width: 40em) {
-  .container {
-    width: 99% !important;
-  }
-}
-
 .italic {
   font-style: italic;
 }
@@ -46,14 +35,14 @@ hr {
 header {
   margin-bottom: 4em;
   text-align: center;
-  height: 600px;
+  height: 555px;
 
   .headshot {
     margin-top: 100px;
-    width: 200px;
-    height: 200px;
+    width: height;
+    height: 175px;
     border-radius: 50%;
-    -webkit-box-shadow: 15px 0px 40px -12px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 15px 0px 40px -12px #000000bf;
     -moz-box-shadow: 15px 0px 40px -12px rgba(0, 0, 0, 0.75);
     box-shadow: 15px 0px 40px -12px rgba(0, 0, 0, 0.75);
   }
@@ -62,7 +51,7 @@ header {
     text-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
     letter-spacing: 0.05em;
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 75px;
   }
 
   p {
@@ -96,7 +85,7 @@ section {
 }
 
 .row {
-  margin-right: -1%;
+  margin-right: margin-left;
   margin-left: -1%;
 
   &:before,
@@ -187,7 +176,7 @@ section {
 
 /* Spotlight */
 .spotlight {
-  background-color: #f3e2d8;
+  background-color: color(is-dark);
   padding: 3em 1em;
   margin-top: 3em;
   margin-bottom: 3em;
@@ -201,21 +190,21 @@ section {
   }
 
   p {
-    color: color(kvr-grey);
+    color: color(is-light);
     font-size: 1.1em;
     margin-bottom: 35px;
   }
 
   h1 {
-    color: color(kvr-green);
+    color: color(is-light);
     font-size: 2.5em;
   }
 
   a {
     color: color(texty);
     text-decoration: none;
-    background-color: color(lighty, kvr-green);
-    border: 3px solid color(kvr-green);
+    background-color: color(lighty, is-dark);
+    border: 3px solid color(is-light);
     padding: 6px 35px;
     border-radius: 3px;
     font-size: 1.2em;
@@ -230,50 +219,6 @@ section {
   }
 }
 /* End Spotlight */
-
-/* Projects */
-.projects {
-  margin-bottom: 1em;
-}
-
-.card {
-  padding-right: 5px;
-  -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.25);
-
-  &:hover {
-    -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  }
-
-  img {
-    padding-bottom: 1.5em;
-  }
-}
-
-@media (max-width: 875px) {
-  .card-columns {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-
-@media (max-width: 575px) {
-  .card-columns {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-
-  .card {
-    width: 75%;
-    margin-bottom: 2em;
-  }
-}
-/* End Projects */
 
 /* Shiny */
 .shiny {

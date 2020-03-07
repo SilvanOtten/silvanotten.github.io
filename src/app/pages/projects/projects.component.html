@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="center projects">Projects</h1>
+
+  <div class="card-columns">
+    <ng-container *ngFor="let project of projects">
+      <app-project [project]=project></app-project>
+    </ng-container>
+  </div>
+
+  <hr>
+</div>

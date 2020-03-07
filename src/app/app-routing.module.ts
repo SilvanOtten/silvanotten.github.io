@@ -17,8 +17,8 @@ const routes: Routes = [
         loadChildren: './pages/about/about.module#AboutModule'
     },
     {
-        path: 'contact',
-        loadChildren: './pages/contact/contact.module#ContactModule'
+        path: 'projects',
+        loadChildren: './pages/projects/projects.module#ProjectsModule'
     },
     {
         path: '**',

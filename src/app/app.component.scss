@@ -10,11 +10,27 @@
   }
 }
 
+.container {
+  max-width: 55em;
+  width: 90%;
+}
+
+@media screen and (max-width: 40em) {
+  .container {
+    width: 99% !important;
+  }
+}
+
 // App style elements
+$is-dark: #02315a;
+$is-light: rgb(255, 255, 255);
+
 $kvr-green: #226c65;
 $kvr-grey: #4c5255;
 
 $colors: (
+  is-dark: $is-dark,
+  is-light: $is-light,
   kvr-green: $kvr-green,
   kvr-grey: $kvr-grey,
   texty: #fff,

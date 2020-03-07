@@ -1,0 +1,39 @@
+@import "../../app.component.scss";
+
+.card {
+  padding-right: 5px;
+  -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  img {
+    padding-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 875px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 575px) {
+  .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+  .card {
+    width: 75%;
+    margin-bottom: 2em;
+  }
+}

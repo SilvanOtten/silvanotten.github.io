@@ -1,0 +1,107 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["pages-page-not-found-page-not-found-module"],{
+
+/***/ "./src/app/pages/page-not-found/page-not-found.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/pages/page-not-found/page-not-found.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"notFound\">\n    <h1>Oops!</h1>\n    <h2>404 - The Page can't be found</h2>\n  </div>\n  <a routerLink=\"\">Go To Homepage</a>\n</div>\n<img src=\"../../../assets/images/chicken-question.png\">"
+
+/***/ }),
+
+/***/ "./src/app/pages/page-not-found/page-not-found.component.scss":
+/*!********************************************************************!*\
+  !*** ./src/app/pages/page-not-found/page-not-found.component.scss ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".content {\n  padding-top: 52px;\n  padding-bottom: 2em; }\n\n@media (max-height: 576px) {\n  .footer {\n    display: none; } }\n\n.container {\n  max-width: 55em;\n  width: 90%; }\n\n@media screen and (max-width: 40em) {\n  .container {\n    width: 99% !important; } }\n\n::ng-deep *:focus {\n  outline: none; }\n\n::ng-deep .carousel-control-prev,\n::ng-deep .carousel-control-next {\n  cursor: pointer; }\n\nh1, h2, a {\n  user-select: none;\n  /* Standard */\n  -webkit-user-select: none;\n  /* Safari */\n  -moz-user-select: none;\n  /* Firefox */\n  -ms-user-select: none;\n  /* IE10+/Edge */ }\n\n@media (max-width: 685px) {\n  .notFound {\n    overflow: hidden; } }\n\n.container {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  max-width: 520px;\n  width: 100%;\n  line-height: 1.6;\n  text-align: center; }\n\n.notFound {\n  position: relative;\n  height: 220px;\n  margin: 0px auto 20px; }\n\nh1 {\n  font-size: 240px;\n  font-weight: 300;\n  text-transform: uppercase;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  z-index: -1; }\n\nh2 {\n  font-weight: 200;\n  text-transform: uppercase;\n  background-color: #fff;\n  padding: 12px 6px;\n  margin: auto;\n  position: absolute;\n  bottom: 0; }\n\na {\n  font-weight: 600;\n  text-decoration: none;\n  color: #fff;\n  text-transform: uppercase;\n  padding: 12px 24px;\n  background: #ffa600;\n  font-size: 18px;\n  transition: 0.2s all; }\n\na:hover {\n    color: #ffa600;\n    background: #111; }\n\nimg {\n  margin: 10vw; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvcGFnZS1ub3QtZm91bmQvQzpcXFVzZXJzXFxlZWtfZFxcRGVza3RvcFxcTGl2ZVxcc2lsdmFub3R0ZW4uZ2l0aHViLmlvL3NyY1xcYXBwXFxhcHAuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3BhZ2VzL3BhZ2Utbm90LWZvdW5kL0M6XFxVc2Vyc1xcZWVrX2RcXERlc2t0b3BcXExpdmVcXHNpbHZhbm90dGVuLmdpdGh1Yi5pby9zcmNcXGFwcFxccGFnZXNcXHBhZ2Utbm90LWZvdW5kXFxwYWdlLW5vdC1mb3VuZC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNFLGlCQUFpQjtFQUNqQixtQkFBbUIsRUFBQTs7QUFHckI7RUFDRTtJQUNFLGFBQWEsRUFBQSxFQUNkOztBQUdIO0VBQ0UsZUFBZTtFQUNmLFVBQVUsRUFBQTs7QUFHWjtFQUxBO0lBT0kscUJBQXFCLEVBQUEsRUFDdEI7O0FBMkNIO0VBRUksYUFBYSxFQUFBOztBQUlqQjs7RUFFRSxlQUFlLEVBQUE7O0FDckVqQjtFQUNJLGlCQUFpQjtFQUFFLGFBQUE7RUFDbkIseUJBQXlCO0VBQUUsV0FBQTtFQUN2QixzQkFBc0I7RUFBRSxZQUFBO0VBQ3BCLHFCQUFxQjtFQUFFLGVBQUEsRUFBZ0I7O0FBR25EO0VBQ0k7SUFDSSxnQkFBZ0IsRUFBQSxFQUNuQjs7QURBTDtFQ0lJLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsUUFBUTtFQUNSLHdDQUF3QztFQUVoQyxnQ0FBZ0M7RUFDeEMsZ0JBQWdCO0VBQ2hCLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsa0JBQWtCLEVBQUE7O0FBZmxCO0VBbUJBLGtCQUFrQjtFQUNsQixhQUFhO0VBQ2IscUJBQXFCLEVBQUE7O0FBR3pCO0VBRUksZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQix5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxRQUFRO0VBQ1Isd0NBQXdDO0VBRWhDLGdDQUFnQztFQUN4QyxXQUFXLEVBQUE7O0FBR2Y7RUFFSSxnQkFBZ0I7RUFDaEIseUJBQXlCO0VBQ3pCLHNCRGpCUztFQ2tCVCxpQkFBaUI7RUFDakIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixTQUFTLEVBQUE7O0FBR2I7RUFFSSxnQkFBZ0I7RUFDaEIscUJBQXFCO0VBQ3JCLFdENUJTO0VDNkJULHlCQUF5QjtFQUN6QixrQkFBa0I7RUFDbEIsbUJEM0JhO0VDNEJiLGVBQWU7RUFFZixvQkFBb0IsRUFBQTs7QUFWeEI7SUFZUSxjRGhDUztJQ2lDVCxnQkRsQ0ssRUFBQTs7QUNzQ2I7RUFDSSxZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9wYWdlLW5vdC1mb3VuZC9wYWdlLW5vdC1mb3VuZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIFBhZ2UgZWxlbWVudHNcclxuLmNvbnRlbnQge1xyXG4gIHBhZGRpbmctdG9wOiA1MnB4O1xyXG4gIHBhZGRpbmctYm90dG9tOiAyZW07XHJcbn1cclxuXHJcbkBtZWRpYSAobWF4LWhlaWdodDogNTc2cHgpIHtcclxuICAuZm9vdGVyIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG59XHJcblxyXG4uY29udGFpbmVyIHtcclxuICBtYXgtd2lkdGg6IDU1ZW07XHJcbiAgd2lkdGg6IDkwJTtcclxufVxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNDBlbSkge1xyXG4gIC5jb250YWluZXIge1xyXG4gICAgd2lkdGg6IDk5JSAhaW1wb3J0YW50O1xyXG4gIH1cclxufVxyXG5cclxuLy8gQXBwIHN0eWxlIGVsZW1lbnRzXHJcbiRpcy1kYXJrOiAjMDIzMTVhO1xyXG4kaXMtbGlnaHQ6IHJnYigyNTUsIDI1NSwgMjU1KTtcclxuXHJcbiRrdnItZ3JlZW46ICMyMjZjNjU7XHJcbiRrdnItZ3JleTogIzRjNTI1NTtcclxuXHJcbiRjb2xvcnM6IChcclxuICBpcy1kYXJrOiAkaXMtZGFyayxcclxuICBpcy1saWdodDogJGlzLWxpZ2h0LFxyXG4gIGt2ci1ncmVlbjogJGt2ci1ncmVlbixcclxuICBrdnItZ3JleTogJGt2ci1ncmV5LFxyXG4gIHRleHR5OiAjZmZmLFxyXG4gIGJhY2tncm91bmQ6ICMzMzMsXHJcbiAgcGlua3k6IGxpZ2h0ZW4oaG90cGluaywgMTAlKSxcclxuICBkYXJreTogIzExMSxcclxuICBvcmFuZ3k6ICNmZmE2MDAsXHJcbiAgZ3JleXk6ICNiYmIsXHJcbiAgbGlnaHR5OiAoXHJcbiAgICBwaW5reTogbGlnaHRlbihob3RwaW5rLCAxMCUpLFxyXG4gICAga3ZyLWdyZWVuOiBsaWdodGVuKCRrdnItZ3JlZW4sIDUlKSxcclxuICAgIGt2ci1ncmV5OiBsaWdodGVuKCRrdnItZ3JleSwgNTAlKVxyXG4gICksXHJcbiAgdHJhbnNwYXJlbnR5OiAoXHJcbiAgICBibGFja3k6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC41KSxcclxuICAgIGRhcmt5OiByZ2JhKDE1LCAxNSwgMTUsIDAuNSlcclxuICApXHJcbik7XHJcblxyXG4vLyBSZXRyaWV2ZSBjb2xvciBmcm9tICRjb2xvcnMgbWFwIGllLiBgY29sb3IoYmFzZSwgcHJpbWFyeSlgXHJcbkBmdW5jdGlvbiBjb2xvcigkY29sb3ItbmFtZSwgJGNvbG9yLXZhcmlhbnQ6IG51bGwpIHtcclxuICAvLyBDb2xvciB2YXJpYW50IGlzIG9wdGlvbmFsXHJcbiAgQGlmICgkY29sb3ItdmFyaWFudCAhPSBudWxsKSB7XHJcbiAgICAvLyBNYXAgaW5jZXB0aW9uXHJcbiAgICBAcmV0dXJuIG1hcC1nZXQobWFwLWdldCgkY29sb3JzLCAkY29sb3ItbmFtZSksICRjb2xvci12YXJpYW50KTtcclxuICB9IEBlbHNlIHtcclxuICAgIEByZXR1cm4gbWFwLWdldCgkY29sb3JzLCAkY29sb3ItbmFtZSk7XHJcbiAgfVxyXG59XHJcblxyXG46Om5nLWRlZXAgKiB7XHJcbiAgJjpmb2N1cyB7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG4gIH1cclxufVxyXG5cclxuOjpuZy1kZWVwIC5jYXJvdXNlbC1jb250cm9sLXByZXYsXHJcbjo6bmctZGVlcCAuY2Fyb3VzZWwtY29udHJvbC1uZXh0IHtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbn1cclxuIiwiQGltcG9ydCBcIi4uLy4uL2FwcC5jb21wb25lbnQuc2Nzc1wiO1xyXG5cclxuJW5vLXNlbGVjdC1zaGFyZWQge1xyXG4gICAgdXNlci1zZWxlY3Q6IG5vbmU7IC8qIFN0YW5kYXJkICovXHJcbiAgICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOyAvKiBTYWZhcmkgKi8gICAgICAgIFxyXG4gICAgICAgIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7IC8qIEZpcmVmb3ggKi9cclxuICAgICAgICAgICAgLW1zLXVzZXItc2VsZWN0OiBub25lOyAvKiBJRTEwKy9FZGdlICovXHJcbn1cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2ODVweCkge1xyXG4gICAgLm5vdEZvdW5kIHtcclxuICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gICAgfVxyXG59XHJcbiAgXHJcbi5jb250YWluZXIge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgbGVmdDogNTAlO1xyXG4gICAgdG9wOiA1MCU7XHJcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xyXG4gICAgICAgIC1tcy10cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxuICAgICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgICBtYXgtd2lkdGg6IDUyMHB4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBsaW5lLWhlaWdodDogMS42O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4ubm90Rm91bmQge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgaGVpZ2h0OiAyMjBweDtcclxuICAgIG1hcmdpbjogMHB4IGF1dG8gMjBweDtcclxufVxyXG5cclxuaDEge1xyXG4gICAgQGV4dGVuZCAlbm8tc2VsZWN0LXNoYXJlZDtcclxuICAgIGZvbnQtc2l6ZTogMjQwcHg7XHJcbiAgICBmb250LXdlaWdodDogMzAwO1xyXG4gICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDUwJTtcclxuICAgIHRvcDogNTAlO1xyXG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxuICAgICAgICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XHJcbiAgICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xyXG4gICAgei1pbmRleDogLTE7XHJcbiAgfVxyXG4gIFxyXG5oMiB7XHJcbiAgICBAZXh0ZW5kICVuby1zZWxlY3Qtc2hhcmVkO1xyXG4gICAgZm9udC13ZWlnaHQ6IDIwMDtcclxuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcih0ZXh0eSk7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDZweDtcclxuICAgIG1hcmdpbjogYXV0bztcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGJvdHRvbTogMDtcclxufVxyXG4gIFxyXG5hIHtcclxuICAgIEBleHRlbmQgJW5vLXNlbGVjdC1zaGFyZWQ7XHJcbiAgICBmb250LXdlaWdodDogNjAwO1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gICAgY29sb3I6IGNvbG9yKHRleHR5KTtcclxuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDI0cHg7XHJcbiAgICBiYWNrZ3JvdW5kOiBjb2xvcihvcmFuZ3kpO1xyXG4gICAgZm9udC1zaXplOiAxOHB4O1xyXG4gICAgLXdlYmtpdC10cmFuc2l0aW9uOiAwLjJzIGFsbDtcclxuICAgIHRyYW5zaXRpb246IDAuMnMgYWxsO1xyXG4gICAgJjpob3ZlciB7XHJcbiAgICAgICAgY29sb3I6IGNvbG9yKG9yYW5neSk7XHJcbiAgICAgICAgYmFja2dyb3VuZDogY29sb3IoZGFya3kpO1xyXG4gICAgfVxyXG59XHJcblxyXG5pbWcge1xyXG4gICAgbWFyZ2luOiAxMHZ3O1xyXG59XHJcblxyXG4gIFxyXG4gICJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/pages/page-not-found/page-not-found.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/pages/page-not-found/page-not-found.component.ts ***!
+  \******************************************************************/
+/*! exports provided: PageNotFoundComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageNotFoundComponent", function() { return PageNotFoundComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var PageNotFoundComponent = /** @class */ (function () {
+    function PageNotFoundComponent() {
+    }
+    PageNotFoundComponent.prototype.ngOnInit = function () {
+    };
+    PageNotFoundComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-page-not-found',
+            template: __webpack_require__(/*! ./page-not-found.component.html */ "./src/app/pages/page-not-found/page-not-found.component.html"),
+            styles: [__webpack_require__(/*! ./page-not-found.component.scss */ "./src/app/pages/page-not-found/page-not-found.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], PageNotFoundComponent);
+    return PageNotFoundComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/page-not-found/page-not-found.module.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/pages/page-not-found/page-not-found.module.ts ***!
+  \***************************************************************/
+/*! exports provided: PageNotFoundModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageNotFoundModule", function() { return PageNotFoundModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _page_not_found_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./page-not-found.component */ "./src/app/pages/page-not-found/page-not-found.component.ts");
+
+// Angular
+
+
+
+// Components
+
+var routes = [
+    {
+        path: '',
+        component: _page_not_found_component__WEBPACK_IMPORTED_MODULE_4__["PageNotFoundComponent"]
+    }
+];
+var PageNotFoundModule = /** @class */ (function () {
+    function PageNotFoundModule() {
+    }
+    PageNotFoundModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [_page_not_found_component__WEBPACK_IMPORTED_MODULE_4__["PageNotFoundComponent"]],
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(routes)
+            ]
+        })
+    ], PageNotFoundModule);
+    return PageNotFoundModule;
+}());
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=pages-page-not-found-page-not-found-module.js.map

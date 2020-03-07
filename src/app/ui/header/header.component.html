@@ -5,7 +5,9 @@
             <div class="navbar-nav" [hidden]="isExpanded">
                 <a class="nav-item nav-link" [class.active]="isActive('home')" routerLink="">Home</a>
                 <a class="nav-item nav-link" [class.active]="isActive('about')" routerLink="/about">About</a>
-                <a class="nav-item nav-link" [class.active]="isActive('contact')" routerLink="/contact">Contact</a>
+                <a class="nav-item nav-link" [class.active]="isActive('projects')" routerLink="/projects">Projects</a>
+                <a class="nav-item nav-link" [class.active]="isActive('not-found')" routerLink="/not-found">Not
+                    Found </a>
             </div>
         </div>
         <div [hidden]="!isExpanded" class="navbar-nav">

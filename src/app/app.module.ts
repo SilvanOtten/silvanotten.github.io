@@ -23,7 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     AppComponent,
     FooterComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
   ],
   imports: [
     AppRoutingModule,
