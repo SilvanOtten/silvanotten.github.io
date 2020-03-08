@@ -1,0 +1,67 @@
+@import "../../app.component.scss";
+
+.spotlight {
+  background-color: color(is-dark);
+  padding: 3em 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+
+  img {
+    width: 80%;
+    max-width: 300px;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: color(is-light);
+    font-size: 1.1em;
+    margin-bottom: 35px;
+  }
+
+  h1 {
+    color: color(is-light);
+    font-size: 2.5em;
+  }
+
+  a {
+    color: color(texty);
+    text-decoration: none;
+    background-color: color(lighty, is-dark);
+    border: 3px solid color(is-light);
+    padding: 6px 35px;
+    border-radius: 3px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 50em) {
+  .spotlight {
+    padding: 5em;
+    text-align: left;
+  }
+}
+
+.shiny {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    background-color: color(transparenty, blacky);
+    height: 100%;
+    width: 3em;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+  }
+  &:hover {
+    &:before {
+      transform: skewX(-45deg) translateX(15em);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}

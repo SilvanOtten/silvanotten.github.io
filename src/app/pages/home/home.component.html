@@ -14,126 +14,27 @@
       to handle an everchanging environment with a positive mindset.
     </p>
   </section>
-  <hr>
+  <hr />
 
   <section class="objective">
     <h3>B.Sc. Information & Communication Technology from Windesheim, University of Applied Sciences.</h3>
     <h6 class="italic">Estimated July 2020</h6>
   </section>
 
-  <hr>
+  <hr />
 
-  <section class="education">
-    <div class="row">
-      <div class="grid-2">
-        <h2>Info Support</h2>
-        <p>Feb. 2020 - Present</p>
-      </div>
-      <div class="grid-4">
-        <ul>
-          <span class="italic">Realtime Monitoring in Distributed Systems</span>
-          <li>Graduation Internship</li>
-          <li>Trace Context W3C Implementation</li>
-          <li>Full Stack Monitoring</li>
-          <li>.NET Core 3.x / Framework 4.x / Blazor / MVC</li>
-        </ul>
-      </div>
-    </div>
+  <div class="education-row" *ngFor="let education of educations;">
+      <app-education-row [education]=education></app-education-row>
+  </div>
 
-    <div class="row">
-      <div class="grid-2">
-        <h2>Windesheim</h2>
-        <p>Sept. 2016 - Present</p>
-      </div>
-      <div class="grid-4">
-        <ul>
-          <span class="italic">Information & Communication Technology</span>
-          <li>Software Engineering</li>
-          <li>Scrum & Agile Methodology</li>
-          <li>Design Patterns & Algorithms and Datastructures</li>
-          <li>Web & App Development with Analytics</li>
-        </ul>
-      </div>
-    </div>
+  <hr />
 
-    <div class="row">
-      <div class="grid-2">
-        <h2>Hogeschool Utrecht</h2>
-        <p>Sept. 2019 - Feb. 2020</p>
-      </div>
-      <div class="grid-4">
-        <ul>
-          <span class="italic">Continuous Delivery in Large and Complex Software Systems</span>
-          <li>Building big applications from front to back with C# / .NET Core</li>
-          <li>Complex systems with K8s, Specflow, Docker, MoQ, RabbitMQ</li>
-          <li>Focus on Process Automation</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="grid-2">
-        <h2>Windesheim</h2>
-        <p>Sept. 2010 - June 2011</p>
-      </div>
-      <div class="grid-4">
-        <ul>
-          <span class="italic">Business Economics</span>
-          <li>Accounting & Financial Management</li>
-          <li>Management & Financial Accounting</li>
-          <li>Internal and External Business Factors</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="grid-2">
-        <h2>University of Twente</h2>
-        <p>Sept. 2009 - June 2010</p>
-      </div>
-      <div class="grid-4">
-        <ul>
-          <span class="italic">Industrial Design Engineering</span>
-          <li>Creatively designing Consumer Products</li>
-          <li>Applied Physics and Material Sciences</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="grid-2">
-        <h2>CSG. De Heemgaard</h2>
-        <p>Sept. 2003 - June 2009</p>
-      </div>
-      <div class="grid-4">
-        <ul>
-          <span class="italic">Nature and Health Sciences - Pre-university Degree</span>
-          <li>Math, Biology, Physics, Chemistry, and Economics</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <hr>
 </div>
 
-<section class="spotlight">
-  <div class="container">
-    <div class="row">
-      <div class="grid-3">
-        <img src="../../../assets/images/projects/infosupport.jpg">
-      </div>
-      <div class="grid-3">
-        <h1>Info Support</h1>
-        <p>Graduation Internship.</p>
-        <p>I'm developing a Proof of Concept for realtime monitoring within a Distributed Software System</p>
-        <a href="http://www.infosupport.com/" class="shiny">View Project</a>
-      </div>
-    </div>
-  </div>
-</section>
+<app-spotlight></app-spotlight>
 
 <div class="container">
-  <hr>
+  <hr />
 
   <section>
     <div class="row">
@@ -172,6 +73,6 @@
     </div>
   </section>
 
-  <hr>
+  <hr />
 
 </div>

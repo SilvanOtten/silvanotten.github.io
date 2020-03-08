@@ -13,27 +13,6 @@
   }
 
   img {
-    padding-bottom: 1.5em;
-  }
-}
-
-@media (max-width: 875px) {
-  .card-columns {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-
-@media (max-width: 575px) {
-  .card-columns {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-
-  .card {
-    width: 75%;
-    margin-bottom: 2em;
+    padding-bottom: 1em;
   }
 }

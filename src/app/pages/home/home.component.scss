@@ -12,10 +12,6 @@
   font-family: "Oxygen";
 }
 
-.italic {
-  font-style: italic;
-}
-
 h1,
 h2,
 h3 {
@@ -96,69 +92,6 @@ section {
 }
 /* End Section */
 
-/* Grid Widths */
-.grid-1 {
-  width: 16.6666666%;
-}
-.grid-2 {
-  width: 33.3333333%;
-}
-.grid-3 {
-  width: 50%;
-}
-.grid-4 {
-  width: 66.6666666%;
-}
-.grid-5 {
-  width: 83.3333333%;
-}
-.grid-6 {
-  width: 100%;
-}
-
-@media screen and (max-width: 576px) {
-  .grid-2,
-  .grid-3,
-  .grid-4 {
-    width: 90%;
-  }
-}
-/* End Grid */
-
-/* Education */
-.education [class*="row"] {
-  border-bottom: dotted 1px #ccc;
-  padding-top: 2em;
-  padding-bottom: 1em;
-
-  h2 {
-    margin-bottom: 0;
-  }
-
-  h2,
-  p {
-    text-align: center;
-  }
-
-  span {
-    line-height: 2em;
-  }
-
-  &:last-of-type {
-    border: none;
-  }
-}
-
-@media screen and (min-width: 40em) {
-  .education {
-    h2,
-    p {
-      text-align: left;
-    }
-  }
-}
-/* End Education */
-
 /* Objective */
 .objective {
   line-height: 2;
@@ -172,74 +105,15 @@ section {
     width: 70%;
   }
 }
-/*End Objective */
+/* End Objective */
 
-/* Spotlight */
-.spotlight {
-  background-color: color(is-dark);
-  padding: 3em 1em;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  text-align: center;
+/* Education */
+.education-row {
+  border-bottom: dotted 1px #ccc;
 
-  img {
-    width: 80%;
-    max-width: 300px;
-    min-width: 200px;
-    margin-bottom: 20px;
-  }
-
-  p {
-    color: color(is-light);
-    font-size: 1.1em;
-    margin-bottom: 35px;
-  }
-
-  h1 {
-    color: color(is-light);
-    font-size: 2.5em;
-  }
-
-  a {
-    color: color(texty);
-    text-decoration: none;
-    background-color: color(lighty, is-dark);
-    border: 3px solid color(is-light);
-    padding: 6px 35px;
-    border-radius: 3px;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  &:last-of-type {
+    border: none;
   }
 }
 
-@media (min-width: 50em) {
-  .spotlight {
-    padding: 5em;
-    text-align: left;
-  }
-}
-/* End Spotlight */
-
-/* Shiny */
-.shiny {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  &:before {
-    content: "";
-    background-color: color(transparenty, blacky);
-    height: 100%;
-    width: 3em;
-    position: absolute;
-    top: 0;
-    left: -4.5em;
-    transform: skewX(-45deg) translateX(0);
-  }
-  &:hover {
-    &:before {
-      transform: skewX(-45deg) translateX(15em);
-      transition: all 0.5s ease-in-out;
-    }
-  }
-}
-/* End Shiny */
+/* End Education */

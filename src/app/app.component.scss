@@ -4,15 +4,19 @@
   padding-bottom: 2em;
 }
 
+.container {
+  max-width: 55em;
+  width: 90%;
+}
+
+.italic {
+  font-style: italic;
+}
+
 @media (max-height: 576px) {
   .footer {
     display: none;
   }
-}
-
-.container {
-  max-width: 55em;
-  width: 90%;
 }
 
 @media screen and (max-width: 40em) {
@@ -71,3 +75,32 @@ $colors: (
 ::ng-deep .carousel-control-next {
   cursor: pointer;
 }
+
+/* Grid Widths */
+.grid-1 {
+  width: 16.6666666%;
+}
+.grid-2 {
+  width: 33.3333333%;
+}
+.grid-3 {
+  width: 50%;
+}
+.grid-4 {
+  width: 66.6666666%;
+}
+.grid-5 {
+  width: 83.3333333%;
+}
+.grid-6 {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    width: 90%;
+  }
+}
+/* End Grid */

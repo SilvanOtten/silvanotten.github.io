@@ -15,7 +15,7 @@ export class AppComponent {
   public title = 'Silvan Otten';
 
   constructor(public router: Router) {
-    // subscribe to router events and send page views to Google Analytics
+    // Subscribe to router events and send page views to Google Analytics
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         ga('set', 'page', event.urlAfterRedirects);
@@ -23,5 +23,4 @@ export class AppComponent {
       }
     });
   }
-
 }

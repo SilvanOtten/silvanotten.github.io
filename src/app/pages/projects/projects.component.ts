@@ -10,7 +10,7 @@ import { ProjectModalComponent } from 'src/app/modals/project-modal/project-moda
 })
 export class ProjectsComponent implements OnInit {
   public projects: Project[];
-  private projectUrlPath = '../../../../../../../assets/images/projects/';
+  private projectUrlPath = '/assets/images/projects/';
 
   constructor(private modalService: NgbModal) { }
 
@@ -18,10 +18,15 @@ export class ProjectsComponent implements OnInit {
     // TO-DO: Retrieve from service
     this.projects = [
       {
+        title: 'Graduation',
+        description: 'Realtime monitoring in a complex distributed software system.',
+        url: this.projectUrlPath + 'infosupport.jpg'
+      },
+      {
         title: 'Continuous Delivery',
         description: 'Minor at the Hogeschool Utrecht by Info Support, building complex applications from front to back with C# / .NET Core. ' +
           'Using K8s, Specflow, Docker, MoQ, RabbitMQ with a focus on automation in Azure.',
-        url: this.projectUrlPath + 'infosupport.jpg'
+        url: this.projectUrlPath + 'hu.png'
       },
       {
         title: 'Kavelruilonline',
@@ -62,7 +67,7 @@ export class ProjectsComponent implements OnInit {
     ];
   }
 
-  open(project: any) {
+  open(project: Project) {
     const modalRef = this.modalService.open(ProjectModalComponent);
     modalRef.componentInstance.project = project;
   }

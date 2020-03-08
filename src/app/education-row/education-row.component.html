@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="grid-2">
+    <h2>{{ education.title }}</h2>
+    <p>{{ education.timespan }}</p>
+  </div>
+  <div class="grid-4">
+    <ul>
+      <span class="italic"> {{ education.description }}</span>
+      <ng-container *ngFor="let characteristic of education.characteristics">
+        <li>{{ characteristic }}</li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

@@ -1,9 +1,13 @@
 // Angular
 import { Component, OnInit, Input } from '@angular/core';
 
+// Bootstrap
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 // Models
 import { Project } from 'src/app/models/project.models';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+// Components
 import { ProjectModalComponent } from 'src/app/modals/project-modal/project-modal.component';
 
 @Component({

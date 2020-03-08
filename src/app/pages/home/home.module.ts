@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Components
 import { HomeComponent } from './home.component';
+import { SpotlightComponent } from 'src/app/components/spotlight/spotlight.component';
+import { EducationRowComponent } from 'src/app/education-row/education-row.component';
 
 const routes: Routes = [
   {
@@ -14,7 +16,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [
+    HomeComponent,
+    EducationRowComponent,
+    SpotlightComponent,
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
