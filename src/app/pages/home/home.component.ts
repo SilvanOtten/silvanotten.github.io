@@ -70,19 +70,19 @@ export class HomeComponent implements OnInit {
             }
         ];
 
-        // TO-DO: Get this from service
+        // TO-DO: Retrieve from service
         this.educations = [
-            {
-                title: 'Info Support',
-                timespan: 'Feb. 2020 - Present',
-                description: 'Realtime Monitoring in Distributed Systems',
-                characteristics: ['Graduation Internship', 'Trace Context W3C Implementation', 'Full Stack Monitoring', '.NET Core 3.x / Framework 4.x / Blazor / MVC']
-            },
             {
                 title: 'Windesheim',
                 timespan: 'Sept. 2016 - Present',
                 description: 'Information & Communication Technology',
                 characteristics: ['Software Engineering', 'Scrum & Agile Methodology', 'Design Patterns & Algorithms and Datastructures', 'Web & App Development with Analytics']
+            },
+            {
+                title: 'Info Support',
+                timespan: 'Feb. 2020 - April 2020',
+                description: 'Realtime Monitoring in Distributed Systems',
+                characteristics: ['Internship', 'Trace Context W3C Implementation', 'Full Stack Monitoring', '.NET Core 3.x / Framework 4.x / Blazor / MVC']
             },
             {
                 title: 'Hogeschool Utrecht',

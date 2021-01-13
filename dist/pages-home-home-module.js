@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"spotlight\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"grid-3\">\n        <img src=\"../../../assets/images/projects/infosupport.jpg\">\n      </div>\n      <div class=\"grid-3\">\n        <h1>Info Support</h1>\n        <p>Graduation Internship.</p>\n        <p>I'm developing a Proof of Concept for realtime monitoring within a Distributed Software System</p>\n        <a href=\"http://www.infosupport.com/\" class=\"shiny\">View Project</a>\n      </div>\n    </div>\n  </div>\n</section>"
+module.exports = "<section class=\"spotlight\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"grid-3\">\n        <img src=\"../../../assets/images/projects/infosupport.jpg\">\n      </div>\n      <div class=\"grid-3\">\n        <h1>Info Support</h1>\n        <p>Internship.</p>\n        <p>I'm developing a Proof of Concept for realtime monitoring within a Distributed Software System</p>\n        <a href=\"http://www.infosupport.com/\" class=\"shiny\">View Project</a>\n      </div>\n    </div>\n  </div>\n</section>"
 
 /***/ }),
 
@@ -124,7 +124,7 @@ var EducationRowComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header style=\"background: url(../../../assets/images/mountain.jpg)\">\n  <img class=\"headshot\" src=\"../../../assets/images/headshot.jpg\">\n  <h1>Silvan Otten</h1>\n  <p>Software Developer</p>\n</header>\n\n<div class=\"container\">\n  <section class=\"center\">\n    <h1>Welcome!</h1>\n    <p>\n      I'm a fourth year student at the University of Windesheim, Zwolle.\n      Currently developing my knowledge and experience within agile environments.\n      I consider my greatest strengths to be my eagerness to learn new skills, pro-activity, and my ability\n      to handle an everchanging environment with a positive mindset.\n    </p>\n  </section>\n  <hr />\n\n  <section class=\"objective\">\n    <h3>B.Sc. Information & Communication Technology from Windesheim, University of Applied Sciences.</h3>\n    <h6 class=\"italic\">Estimated July 2020</h6>\n  </section>\n\n  <hr />\n\n  <div class=\"education-row\" *ngFor=\"let education of educations;\">\n      <app-education-row [education]=education></app-education-row>\n  </div>\n\n  <hr />\n\n</div>\n\n<app-spotlight></app-spotlight>\n\n<div class=\"container\">\n  <hr />\n\n  <section>\n    <div class=\"row\">\n      <div class=\"grid-2\">\n        <h1>Languages</h1>\n        <ul>\n          <li>Angular</li>\n          <li>TypeScript / JavaScript</li>\n          <li>C# / .NET</li>\n          <li>Linq / SQL / ExpressJS</li>\n          <li>HTML / CSS</li>\n        </ul>\n      </div>\n\n      <div class=\"grid-2\">\n        <h1>Methods</h1>\n        <ul>\n          <li>Scrum / Agile</li>\n          <li>MVC</li>\n          <li>Git</li>\n          <li>Test Driven Development</li>\n          <li>Story Mapping</li>\n        </ul>\n      </div>\n\n      <div class=\"grid-2\">\n        <h1>Goals</h1>\n        <ul>\n          <li>Fullstack</li>\n          <li>UI / UX</li>\n          <li>Optimization</li>\n          <li>Data Analyses</li>\n          <li>Self-Improvement</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <hr />\n\n</div>"
+module.exports = "<header style=\"background: url(../../../assets/images/mountain.jpg)\">\n  <img class=\"headshot\" src=\"../../../assets/images/headshot.jpg\">\n  <h1>Silvan Otten</h1>\n  <p>Software Developer</p>\n</header>\n\n<div class=\"container\">\n  <section class=\"center\">\n    <h1>Welcome!</h1>\n    <p>\n      I'm a fourth year student at the University of Windesheim, Zwolle.\n      Currently developing my knowledge and experience within agile environments.\n      I consider my greatest strengths to be my eagerness to learn new skills, pro-activity, and my ability\n      to handle an everchanging environment with a positive mindset.\n    </p>\n  </section>\n  <hr />\n\n  <section class=\"objective\">\n    <h3>B.Sc. Information & Communication Technology from Windesheim, University of Applied Sciences.</h3>\n    <h6 class=\"italic\">Estimated July 2021</h6>\n  </section>\n\n  <hr />\n\n  <div class=\"education-row\" *ngFor=\"let education of educations;\">\n    <app-education-row [education]=education></app-education-row>\n  </div>\n\n  <hr />\n\n</div>\n\n<!-- <app-spotlight></app-spotlight> -->\n\n<div class=\"container\">\n  <!-- <hr /> -->\n\n  <section>\n    <div class=\"row\">\n      <div class=\"grid-2\">\n        <h1>Languages</h1>\n        <ul>\n          <li>Angular</li>\n          <li>TypeScript / JavaScript</li>\n          <li>C# / .NET</li>\n          <li>Linq / SQL / ExpressJS</li>\n          <li>HTML / CSS</li>\n        </ul>\n      </div>\n\n      <div class=\"grid-2\">\n        <h1>Methods</h1>\n        <ul>\n          <li>Scrum / Agile</li>\n          <li>MVC</li>\n          <li>Git</li>\n          <li>Test Driven Development</li>\n          <li>Story Mapping</li>\n        </ul>\n      </div>\n\n      <div class=\"grid-2\">\n        <h1>Goals</h1>\n        <ul>\n          <li>Fullstack</li>\n          <li>UI / UX</li>\n          <li>Optimization</li>\n          <li>Data Analyses</li>\n          <li>Self-Improvement</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <hr />\n\n</div>"
 
 /***/ }),
 
@@ -211,19 +211,19 @@ var HomeComponent = /** @class */ (function () {
                 url: this.projectUrlPath + 'pat.jpg'
             }
         ];
-        // TO-DO: Get this from service
+        // TO-DO: Retrieve from service
         this.educations = [
-            {
-                title: 'Info Support',
-                timespan: 'Feb. 2020 - Present',
-                description: 'Realtime Monitoring in Distributed Systems',
-                characteristics: ['Graduation Internship', 'Trace Context W3C Implementation', 'Full Stack Monitoring', '.NET Core 3.x / Framework 4.x / Blazor / MVC']
-            },
             {
                 title: 'Windesheim',
                 timespan: 'Sept. 2016 - Present',
                 description: 'Information & Communication Technology',
                 characteristics: ['Software Engineering', 'Scrum & Agile Methodology', 'Design Patterns & Algorithms and Datastructures', 'Web & App Development with Analytics']
+            },
+            {
+                title: 'Info Support',
+                timespan: 'Feb. 2020 - April 2020',
+                description: 'Realtime Monitoring in Distributed Systems',
+                characteristics: ['Internship', 'Trace Context W3C Implementation', 'Full Stack Monitoring', '.NET Core 3.x / Framework 4.x / Blazor / MVC']
             },
             {
                 title: 'Hogeschool Utrecht',

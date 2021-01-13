@@ -18,7 +18,7 @@ export class ProjectsComponent implements OnInit {
     // TO-DO: Retrieve from service
     this.projects = [
       {
-        title: 'Graduation',
+        title: 'Internship',
         description: 'Realtime monitoring in a complex distributed software system.',
         url: this.projectUrlPath + 'infosupport.jpg'
       },
