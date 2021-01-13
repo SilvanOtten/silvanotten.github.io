@@ -121,7 +121,7 @@ var ProjectsComponent = /** @class */ (function () {
         // TO-DO: Retrieve from service
         this.projects = [
             {
-                title: 'Graduation',
+                title: 'Internship',
                 description: 'Realtime monitoring in a complex distributed software system.',
                 url: this.projectUrlPath + 'infosupport.jpg'
             },
